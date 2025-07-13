@@ -1,56 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-  <meta charset="UTF-8">
-  <title>Assignment 2</title>
-  <link href="css/styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Discussion Bootstrap Project Mod 9</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <div class="grid-container">
-    <header>
-      <h1>Assignment 2</h1>
-    </header>
 
-    <div class="iframe">
-      <iframe 
-      width="600" 
-      height="400" 
-      src="https://www.youtube.com/embed/EOFA9kPQ_uU" 
-      title="Tally Hall - Hidden in the Sand" 
-      frameborder="0" 
-      allow="encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen>
-    </iframe>
-    </div>
+<body class="d-flex flex-column h-100 lato-font">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Bootstrap Project Mod 9</a>
 
-    <main class="content">
-      <h2>Content Area</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-      <img width="90%"
-      height="70%" src="images/tools-right.jpg" alt="Knifu">
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-    </main>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><span class="nav-link active">Design Discussion</span></li>
+            <li class="nav-item"><a class="nav-link" href="page1.html">Article One</a></li>
+            <li class="nav-item"><a class="nav-link" href="page2.html">Article Two</a></li>
+            <li class="nav-item"><a class="nav-link" href="page3.html">Article Three</a></li>
+            <li class="nav-item"><a class="nav-link" href="page4.html">Article Four</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <aside class="links">
-      <h2>Quick Links</h2>
+  <main class="container flex-grow-1 py-5">
+    <section class="white-bg p-4 rounded shadow-sm">
+      <h1 class="mb-4 text-center">Design Discussion</h1>
+
+      <h2>Overview</h2>
+      <p>
+        The goal of this project is to showcase Bootstrap’s responsive power while delivering a clean,
+        personal aesthetic. To achieve this, I applied a soft peach gradient for subtle warmth and chose
+        <em>Lato</em> for its excellent legibility. The page structure remains lightweight so loading is quick
+        on any device.
+      </p>
+
+      <h2>Key Design Principles</h2>
       <ul>
-        <li><a href="#">First Link</a></li>
-        <li><a href="#">Second Link</a></li>
-        <li><a href="#">Third Link</a></li>
-        <li><a href="#">Fourth Link</a></li>
+        <li><strong>Consistency</strong> — Header, navigation, and footer repeat on every page.</li>
+        <li><strong>Contrast</strong> — A light navbar and dark footer create clear visual landmarks.</li>
+        <li><strong>Alignment</strong> — Bootstrap’s grid keeps text and imagery neatly lined up.</li>
+        <li><strong>Responsiveness</strong> — Flexbox and breakpoints adapt layouts fluidly.</li>
+        <li><strong>Accessibility</strong> — Color choices meet WCAG AA; focus outlines and alt text are present.</li>
       </ul>
-    </aside>
 
-    <footer>
-      <p>&copy; 2025 Your Name or Company</p>
-    </footer>
-  </div>
+      <h2>Validation &amp; Performance</h2>
+      <p>
+        This page passes <a href="https://validator.nu/" target="_blank" rel="noopener">W3C Nu</a>
+        validation with zero errors. Lighthouse (desktop) returns:</p>
+      <table class="table table-bordered w-auto mx-auto">
+        <thead><tr><th>Metric</th><th>Score</th></tr></thead>
+        <tbody>
+          <tr><td>Performance</td><td>xx</td></tr>
+          <tr><td>Accessibility</td><td>xx</td></tr>
+          <tr><td>Best Practices</td><td>xx</td></tr>
+          <tr><td>SEO</td><td>xx</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-3 mt-auto">
+    <small>&copy; 2025 Antonio Cardenas Project</small>
+  </footer>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
