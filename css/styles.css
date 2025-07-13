@@ -18,7 +18,7 @@ body {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid #ddd;
 }
@@ -38,67 +38,33 @@ body {
   color: #ff7f50;
 }
 
-footer {
-  background: #222;
-  color: #eee;
-  font-size: 0.9rem;
-}
-
-header {
-  grid-area: header;
-  padding: 1rem;
-}
-
-.iframe {
-  grid-area: iframe;
-}
-
-.content {
-  grid-area: content;
-  overflow-y: auto;
-  padding: 1rem;
-}
-
-.links {
-  grid-area: links;
-  background: #f9f9f9;
-  padding: 1rem;
-}
-
-.links ul {
-  list-style: none;
-}
-
-.links li {
-  margin-bottom: 0.5rem;
-}
-
-footer {
-  grid-area: footer;
-  padding: 1rem;
-  text-align: center;
-}
-
-.white-bg {
-  background: #ffffff;
+.p-5.bg-light {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0;
 }
 
 h1, h2, h3 {
   font-weight: 700;
   color: #333;
+  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
+
+.white-bg {
+  background: #ffffff;
+  }
 
 .btn-custom {
   background-color: #ff7f50;
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
 }
 
 .btn-custom:hover {
@@ -114,16 +80,35 @@ img:hover {
   transform: scale(1.02);
 }
 
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-areas:
-      "header"
-      "content"
-      "iframe"
-      "links"
-      "footer";
-    grid-template-columns: 1fr;
-  }
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card-img-top {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  font-size: 0.9rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .spacing-top {
@@ -132,4 +117,10 @@ img:hover {
 
 .spacing-bottom {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .p-5.bg-light {
+    padding: 2rem !important;
+  }
 }
